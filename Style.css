@@ -1,0 +1,43 @@
+body {
+    background-color:aquamarine
+}
+form{
+    margin-top: 100px;
+}
+.f1 input{
+    float: right;
+    margin-right: 650px;
+    width: 25px;
+   
+}
+.f1 h3{
+    margin-left: 650px;
+       
+}
+.f2  input {
+    float: right;
+    margin-right: 513px;
+    
+}
+.f2 h3{
+    margin-left: 485px;
+}
+.f3 input{
+    float: right;   
+    margin-right: 650px; 
+    width: 25px;   
+}
+.f3 h3{
+    margin-left: 570px;
+}
+.f4 input{
+    float: right;
+    margin-right: 513px;
+}
+.f4 h3{
+    margin-left: 570px;
+}
+.botoes{
+    text-align: center;
+    margin-left: 80px;
+}

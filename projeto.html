@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloo.css"/>
+    <script lang="JavaScript">
+       function Mostrar(){
+         n = document.getElementById("txtpipi").value;
+         m = document.getElementById("txtpupu").value;
+            if(isNaN(n)){
+               m = document.getElementById("txtpupu").value = "Apenas letras por favor"  
+            }
+            else{
+                n = parseInt(n);
+
+                switch(n){
+                    case 1:{
+                        m = document.getElementById("txtpupu").value = "Janeiro";
+                        break;
+                    }
+                    case 2:{
+                        m  = document.getElementById("txtpupu").value = "Fevereiro";
+                        break;
+                    }
+                    case 3:{
+                        m = document.getElementById("txtpupu").value = "Março";
+                        break;
+                    }
+                    case 4:{
+                        m = document.getElementById("txtpupu").value = "Abril";
+                        break;
+                    }
+                    case 5:{
+                        m = document.getElementById("txtpupu").value = "Maio";
+                        break;
+                    }
+                    case 6: {
+                        m = document.getElementById("txtpupu").value = "Junho";
+                        break;
+                    }
+                    case 7: {
+                        m = document.getElementById("txtpupu").value = "Julho";
+                        break;
+                    }
+                    case 8:{
+                        m = document.getElementById("txtpupu").value = "Agosto";
+                        break;
+                    }
+                    case 9:{
+                        m = document.getElementById("txtpupu").value = "Setembro";
+                        break;
+                    }
+                    case 10:{
+                        m = document.getElementById("txtpupu").value = "Outubro";
+                        break;
+                    }
+                    case 11:{
+                        m = document.getElementById("txtpupu").value = "Novembro";
+                        break;
+                    }
+                    case 12:{
+                        m = document.getElementById("txtpupu").value = "Dezembro";
+                        break;
+                    }
+                    default:{
+                        m = document.getElementById("txtpupu").value = "Valor ínvalido";
+                    }
+
+                }
+            }        
+       }
+        function Limpar(){
+           m = document.getElementById("txtpupu").value
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div class="FO1">
+            <h3>Digite o numero do Mês que você faz aniversário</h3>
+            <input type="text" id="txtpipi"/>
+        </div>
+        <div class="FO2">
+            <h3> Então você faz aniversário no mês de:</h3>
+            <input type="text" disabled id="txtpupu"/>
+        </div>
+        <div class="Botao">
+            <input type="button" value="Mostrar" onclick="Mostrar()"/>
+            <input type="reset" value="Limpar"   onclick="Limpar()"/>
+        </div>
+    </form>
+</body>
+</html>

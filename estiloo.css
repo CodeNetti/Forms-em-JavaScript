@@ -1,0 +1,17 @@
+body{
+    background-color: blueviolet;
+}
+form{
+    text-align: center;
+    margin-top: 100px;
+}
+.FO1 input{
+     width: 20px;
+}
+.FO2 input{
+    width: 57px;
+}
+.Botao input{
+    margin-top: 25px;
+}
+    

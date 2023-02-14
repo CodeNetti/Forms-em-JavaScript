@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="Style.css">
+    <script lang="JavaScript">
+        function mostrar()
+        {
+            var v = document.getElementById("txtval").value;
+            if(v=="1")
+            document.getElementById("txtsema").value ="Domingo";
+            else if( v=="2")
+            document.getElementById("txtsema").value ="Segunda-feira";
+            else if(v=="3")
+            document.getElementById("txtsema").value ="Terça-feira";
+            else if(v=="4")
+            document.getElementById("txtsema").value ="Quarta-feira";
+            else if(v=="5")
+            document.getElementById("txtsema").value ="Quinta-feira";
+            else if(v=="6")
+            document.getElementById("txtsema").value="Sexta-feira";
+            else if(v=="7")
+            document.getElementById("txtsema").value="Sábado";
+            else
+            document.getElementById("txtsema").value="Ta errado meu fi";
+        
+       
+            var m = document.getElementById("txtmes1").value
+            if(m =="1")
+            document.getElementById("txtmes2").value = "Janeiro";
+            else if (m=="2")
+            document.getElementById("txtmes2").value = "Fevereiro";
+            else if (m=="3")
+            document.getElementById("txtmes2").value = "Março";
+            else if (m=="4")
+            document.getElementById("txtmes2").value = "Abril";
+            else if (m=="5")
+            document.getElementById("txtmes2").value = "Maio";
+            else if (m=="6")
+            document.getElementById("txtmes2").value = "Junho";
+            else if (m=="7")
+            document.getElementById("txtmes2").value = "Julho";
+            else if (m=="8")
+            document.getElementById("txtmes2").value = "Agosto";
+            else if (m=="9")
+            document.getElementById("txtmes2").value = "Setembro";
+            else if (m=="10")
+            document.getElementById("txtmes2").value = "Outubro";
+            else if (m=="11")
+            document.getElementById("txtmes2").value = "Novembro";
+            else if (m=="12")
+            document.getElementById("txtmes2").value = "Dezembro";
+            else
+            document.getElementById("txtmes2").value = "Isso não existe nesse planete";
+        }
+        
+            
+        
+        
+        function Limpar()
+        {
+            document.getElementById("txtval").value = null
+            document.getElementById("txtsema").value = null
+            document.getElementById("txtmes1").value = null
+            document.getElementById("txtmes2").value = null
+        }   
+        
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+    
+        <forms>
+            
+
+            <div class="f1">
+                <input   type="text" id="txtval"/>  
+                <h3>Digite o valor:</h3>   
+            </div> 
+            <div class="f2">  
+                
+                <input type="text" disabled id="txtsema"/>
+                <h3> O dia da semana correspondente é:</h3>
+            </div>
+            
+            <div class="f3">
+                <input type="text" id="txtmes1">
+                <h3>Digite o numero do mês:</h3>
+            </div>
+            <div class="f4">
+                <input type="text" disabled id="txtmes2">
+                <h3>O mês correspondente é:</h3>
+            </div>
+            <div class="botoes">
+                <input type="button" value="Mostrar" onclick="mostrar()"/>
+                <input type="reset"  value="Limpar" onclick="Limpar(this)"/> 
+            </div>
+        </forms>
+    
+</body>
+</html>
